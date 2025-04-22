@@ -74,7 +74,7 @@ marquee {
 }
 
 body {
-  background-image: url(/carta/img/ChatGPT\ Image\ 19\ de\ abr.\ de\ 2025\,\ 20_33_13.png);
+  background-image: url(/img/ChatGPT\ Image\ 19\ de\ abr.\ de\ 2025\,\ 20_33_13.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -305,18 +305,42 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  padding: 5px;
+  padding: 20px;
   border-radius: 10px;
   font-weight: 600;
-  font-family: 'Special Elite', serif;
+  font-family: 'Bitter', serif;
+}
+.mixtape h2 {
+  text-align: center;
+  font-size: 40px;
 }
 
+.mixtape p {
+  text-align: justify;
+}
+.botoes button {
+  background-color: #ddc7a483;
+  color: rgb(68, 0, 0);
+  font-size: 90px;
+  font-weight: 50px;
+  border: solid ;
+  font-family: 'Special Elite', serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 140px;
+  margin-bottom: 50px;
+
+}
+
+.botoes button:hover {
+  color: rgb(54, 1, 1);
+  transform: scale(1.05);
+}
 .playerSpotify {
   margin-top: 30px;
   position: relative;
-  overflow: hidden;
   padding: calc((380px/380px)*100%);
-  display: flex;
+  display: block;
   width: 100%;
   max-width: 700px;
 }
@@ -326,25 +350,7 @@ button:hover {
   height: 100%;
 }
 
-.botoes button {
-  color: rgb(68, 0, 0);
-  font-size: 70px;
-  font-weight: 50px;
-  padding: 20px;
-  border: none;
-  border-radius: 1000px;
-  font-family: 'Special Elite', serif;
-  cursor: pointer;
-  transition: 0.3s ease;
-  width: 125px;
-  margin-bottom: 50px;
 
-}
-
-.botoes button:hover {
-  color: rgb(54, 1, 1);
-  transform: scale(1.05);
-}
 
 #canvasJogo {
   background-color: #3a3333;
@@ -410,8 +416,6 @@ button:hover {
   color: #000000;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   font-size: 40px;
   font-family: "Special Elite", sans-serif;
   font-weight: 600;
@@ -427,14 +431,15 @@ button:hover {
   animation: scrollCreditos 13s linear forwards;
 }
 p {
-  margin: 40px;
+  margin: 70px;
 }
 .poemas {
+  margin: 70px;
   font-weight: 600;
   text-align: left;
   font-size: 40px;
 }
 @keyframes scrollCreditos {
-  0% { bottom: -50vh; }
+  0% { bottom: -40vh; }
   100% { bottom: 100vh; }
 }
